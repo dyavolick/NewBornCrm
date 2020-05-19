@@ -3,7 +3,8 @@ const Scheme = mongoose.Schema
 
 const orderSchema = new Scheme({
     date:{
-        type: Date
+        type: Date,
+        default: Date.now()
     },
     order:{
         type: Number,
